@@ -87,7 +87,8 @@ margin: 1em auto;
 <li id="menu-item-24" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-24"><a href="/p-16.html">Safety</a></li>
 <li id="menu-item-23" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-23"><a href="/p-18.html">Sustainability</a></li>
 <li id="menu-item-1460" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1460"><a href="/category/news-insights/index.html">Blog</a></li>
-<li id="menu-item-1497" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-20 current_page_item menu-item-1497"><a href="/p-20.html" aria-current="page">Contact Us</a></li>
+<li id="menu-item-1497" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1497"><a href="/p-20.html">Contact Us</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item current_page_item"><a href="/apply/" aria-current="page">Apply</a></li>
 </ul></nav>            </div>
 <div class="burger-menu">
 <span></span>
@@ -107,28 +108,28 @@ Fort Lauderdale, Florida 33309, United States</p>
 </div></section><section class="text-block"><h2 class='subtitle-with-lines  subtitle-with-lines-black-color '>WE ARE HIRING</h2><div class="content content-container-mobile"><p class="section-padding" style="text-align: center;">Join Capital Jets and be part of a team dedicated to safety, luxury, and operational excellence.<br>
 Complete the application below to submit your details and resume for review.</p>
 <div class="wpcf7 no-js" id="apply-form-wrapper" lang="en-US" dir="ltr">
-<form id="apply-form" action="#" method="post" enctype="multipart/form-data" class="wpcf7-form init" aria-label="Application form">
+<form id="apply-form" action="/api/apply" method="post" enctype="multipart/form-data" class="wpcf7-form init" aria-label="Application form">
 <div class="contact-form-columns">
 <p><label> FIRST NAME<br>
-<span class="wpcf7-form-control-wrap"><input size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" autocomplete="given-name" aria-required="true" required type="text" name="first-name"></span>
+<span class="wpcf7-form-control-wrap"><input size="40" minlength="2" maxlength="50" pattern="[A-Za-z][A-Za-z\s'\-]{1,49}" title="Please enter a valid first name (letters only, at least 2 characters)." class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" autocomplete="given-name" aria-required="true" required type="text" name="first-name"></span>
 </label></p>
 <p><label> LAST NAME<br>
-<span class="wpcf7-form-control-wrap"><input size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" autocomplete="family-name" aria-required="true" required type="text" name="last-name"></span>
+<span class="wpcf7-form-control-wrap"><input size="40" minlength="2" maxlength="50" pattern="[A-Za-z][A-Za-z\s'\-]{1,49}" title="Please enter a valid last name (letters only, at least 2 characters)." class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" autocomplete="family-name" aria-required="true" required type="text" name="last-name"></span>
 </label></p>
 <p><label> SSN<br>
-<span class="wpcf7-form-control-wrap"><input size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" placeholder="XXX-XX-XXXX" aria-required="true" required type="text" name="ssn"></span>
+<span class="wpcf7-form-control-wrap"><input size="40" minlength="11" maxlength="11" inputmode="numeric" autocomplete="off" pattern="\d{3}-\d{2}-\d{4}" title="Enter a valid 9-digit SSN in XXX-XX-XXXX format." class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" placeholder="XXX-XX-XXXX" aria-required="true" required type="text" name="ssn"></span>
 </label></p>
-<p><label> DATE OF BIRTH<br>
-<span class="wpcf7-form-control-wrap"><input class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" required type="date" name="dob" style="width:100%;"></span>
+<p><label> DATE OF BIRTH (18+)<br>
+<span class="wpcf7-form-control-wrap"><input class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" required type="date" name="dob" min="1900-01-01" style="width:100%;"></span>
 </label></p>
 <p style="grid-column: 1 / -1;"><label> ADDRESS<br>
-<span class="wpcf7-form-control-wrap"><input size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" autocomplete="street-address" aria-required="true" required type="text" name="address"></span>
+<span class="wpcf7-form-control-wrap"><input size="40" minlength="5" maxlength="200" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" autocomplete="street-address" aria-required="true" required type="text" name="address"></span>
 </label></p>
 <p><label> PHONE NUMBER<br>
-<span class="wpcf7-form-control-wrap"><input size="40" class="wpcf7-form-control wpcf7-tel wpcf7-validates-as-required" autocomplete="tel" aria-required="true" required type="tel" name="phone"></span>
+<span class="wpcf7-form-control-wrap"><input size="40" maxlength="20" inputmode="tel" pattern="\+?[\d\s().\-]{7,20}" title="Enter a valid phone number (7 to 15 digits)." class="wpcf7-form-control wpcf7-tel wpcf7-validates-as-required" autocomplete="tel" aria-required="true" required type="tel" name="phone"></span>
 </label></p>
 <p><label> EMAIL ADDRESS<br>
-<span class="wpcf7-form-control-wrap"><input size="40" class="wpcf7-form-control wpcf7-email wpcf7-validates-as-required" autocomplete="email" aria-required="true" required type="email" name="email"></span>
+<span class="wpcf7-form-control-wrap"><input size="40" maxlength="254" class="wpcf7-form-control wpcf7-email wpcf7-validates-as-required" autocomplete="email" aria-required="true" required type="email" name="email"></span>
 </label></p>
 <p><label> UPLOAD ID FRONT<br>
 <span class="wpcf7-form-control-wrap"><input class="wpcf7-form-control wpcf7-file wpcf7-validates-as-required" aria-required="true" required type="file" name="id-front" accept="image/*,.pdf"></span>
@@ -144,40 +145,225 @@ Complete the application below to submit your details and resume for review.</p>
 <div id="apply-response" class="wpcf7-response-output" aria-hidden="true" style="display:none; margin-top: 16px; padding: 12px; border: 2px solid #46b450; color: #1b365d; font-weight: 600;"></div>
 </form>
 <script>
-document.getElementById("apply-form").addEventListener("submit", async function(e) {
-  e.preventDefault();
-  var form = this;
+(function() {
+  var form = document.getElementById("apply-form");
   var out = document.getElementById("apply-response");
-  var btn = form.querySelector('input[type="submit"]');
-  btn.disabled = true;
-  btn.value = "SUBMITTING...";
-  out.style.display = "none";
+  var ssnInput = form.querySelector('input[name="ssn"]');
+  var dobInput = form.querySelector('input[name="dob"]');
+  var phoneInput = form.querySelector('input[name="phone"]');
+  var emailInput = form.querySelector('input[name="email"]');
+  var hideTimer = null;
 
-  try {
-    var res = await fetch("/api/apply", {
-      method: "POST",
-      body: new FormData(form)
-    });
-    var data = await res.json();
-    if (data.ok) {
-      out.style.display = "block";
+  function pad2(n) { return n < 10 ? "0" + n : String(n); }
+
+  function getMaxDobStr() {
+    var now = new Date();
+    var y = now.getFullYear() - 18;
+    var m = now.getMonth() + 1;
+    var d = now.getDate();
+    // Clamp day for leap years (Feb 29 -> Feb 28)
+    var maxDay = new Date(y, m, 0).getDate();
+    if (d > maxDay) d = maxDay;
+    return y + "-" + pad2(m) + "-" + pad2(d);
+  }
+
+  function clearMessage() {
+    if (hideTimer) {
+      clearTimeout(hideTimer);
+      hideTimer = null;
+    }
+    out.style.display = "none";
+    out.textContent = "";
+    out.setAttribute("aria-hidden", "true");
+    form.classList.remove("sent", "failed", "invalid");
+    form.classList.add("init");
+  }
+
+  function showMessage(kind, text, autoHideMs) {
+    if (hideTimer) {
+      clearTimeout(hideTimer);
+      hideTimer = null;
+    }
+    form.classList.remove("init", "submitting", "sent", "failed", "invalid");
+    form.classList.add(kind);
+    out.style.display = "block";
+    out.setAttribute("aria-hidden", "false");
+    out.textContent = text;
+    if (kind === "sent") {
       out.style.borderColor = "#46b450";
       out.style.color = "#1b365d";
-      out.textContent = "Thank you for your application. Our team will review your details and get back to you shortly.";
-      form.reset();
+    } else if (kind === "invalid") {
+      out.style.borderColor = "#ffb900";
+      out.style.color = "#7a5800";
     } else {
-      throw new Error(data.error || "Submission failed");
+      out.style.borderColor = "#dc3232";
+      out.style.color = "#dc3232";
     }
-  } catch (err) {
-    out.style.display = "block";
-    out.style.borderColor = "#dc3232";
-    out.style.color = "#dc3232";
-    out.textContent = "Error submitting application: " + err.message;
-  } finally {
-    btn.disabled = false;
-    btn.value = "SUBMIT APPLICATION";
+    if (autoHideMs) {
+      hideTimer = setTimeout(clearMessage, autoHideMs);
+    }
   }
-});
+
+  function isValidSsn(val) {
+    if (!/^\d{3}-\d{2}-\d{4}$/.test(val)) return false;
+    var parts = val.split("-");
+    if (parts[0] === "000" || parts[1] === "00" || parts[2] === "0000") return false;
+    return true;
+  }
+
+  function getAge(dobStr) {
+    var m = /^(\d{4})-(\d{2})-(\d{2})$/.exec(dobStr);
+    if (!m) return -1;
+    var year = parseInt(m[1], 10);
+    var month = parseInt(m[2], 10);
+    var day = parseInt(m[3], 10);
+    var check = new Date(year, month - 1, day);
+    if (check.getFullYear() !== year || check.getMonth() !== month - 1 || check.getDate() !== day) {
+      return -1;
+    }
+    var today = new Date();
+    var age = today.getFullYear() - year;
+    var monthDiff = (today.getMonth() + 1) - month;
+    if (monthDiff < 0 || (monthDiff === 0 && today.getDate() < day)) {
+      age--;
+    }
+    return age;
+  }
+
+  // Enforce 18+ max date on the date picker
+  dobInput.max = getMaxDobStr();
+
+  // Auto-format SSN strictly to 9 digits (XXX-XX-XXXX)
+  ssnInput.addEventListener("input", function() {
+    var digits = this.value.replace(/\D/g, "").slice(0, 9);
+    var formatted = digits;
+    if (digits.length > 5) {
+      formatted = digits.slice(0, 3) + "-" + digits.slice(3, 5) + "-" + digits.slice(5);
+    } else if (digits.length > 3) {
+      formatted = digits.slice(0, 3) + "-" + digits.slice(3);
+    }
+    this.value = formatted;
+    if (digits.length === 9 && !isValidSsn(formatted)) {
+      this.setCustomValidity("Please enter a valid 9-digit SSN (XXX-XX-XXXX).");
+    } else {
+      this.setCustomValidity("");
+    }
+  });
+
+  // Live DOB 18+ validation
+  function validateDobField() {
+    var val = dobInput.value;
+    if (!val) {
+      dobInput.setCustomValidity("");
+      return;
+    }
+    var age = getAge(val);
+    if (age < 0 || val < "1900-01-01") {
+      dobInput.setCustomValidity("Please enter a valid date of birth.");
+    } else if (age < 18) {
+      dobInput.setCustomValidity("You must be at least 18 years old to apply.");
+    } else {
+      dobInput.setCustomValidity("");
+    }
+  }
+  dobInput.addEventListener("input", validateDobField);
+  dobInput.addEventListener("change", validateDobField);
+
+  // Live phone digit-count validation
+  phoneInput.addEventListener("input", function() {
+    var digits = this.value.replace(/\D/g, "");
+    if (this.value && (digits.length < 7 || digits.length > 15)) {
+      this.setCustomValidity("Please enter a valid phone number (7 to 15 digits).");
+    } else {
+      this.setCustomValidity("");
+    }
+  });
+
+  // Hide any previous confirmation/error banner as soon as user interacts again or triggers validation
+  form.addEventListener("input", clearMessage);
+  form.addEventListener("change", clearMessage);
+  form.addEventListener("invalid", clearMessage, true);
+
+  form.addEventListener("submit", async function(e) {
+    e.preventDefault();
+    clearMessage();
+
+    validateDobField();
+    var ssnVal = ssnInput.value.trim();
+    if (!isValidSsn(ssnVal)) {
+      showMessage("invalid", "Please enter a valid 9-digit SSN in XXX-XX-XXXX format.");
+      ssnInput.focus();
+      return;
+    }
+
+    var age = getAge(dobInput.value);
+    if (age < 0 || dobInput.value < "1900-01-01") {
+      showMessage("invalid", "Please enter a valid date of birth.");
+      dobInput.focus();
+      return;
+    }
+    if (age < 18) {
+      showMessage("invalid", "You must be at least 18 years old to apply.");
+      dobInput.focus();
+      return;
+    }
+
+    var phoneDigits = phoneInput.value.replace(/\D/g, "");
+    if (phoneDigits.length < 7 || phoneDigits.length > 15) {
+      showMessage("invalid", "Please enter a valid phone number (7 to 15 digits).");
+      phoneInput.focus();
+      return;
+    }
+
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(emailInput.value.trim())) {
+      showMessage("invalid", "Please enter a valid email address.");
+      emailInput.focus();
+      return;
+    }
+
+    var totalBytes = 0;
+    ["id-front", "id-back", "resume"].forEach(function(name) {
+      var input = form.querySelector('input[name="' + name + '"]');
+      if (input && input.files && input.files[0]) {
+        totalBytes += input.files[0].size;
+      }
+    });
+    if (totalBytes > 5 * 1024 * 1024) {
+      showMessage("invalid", "Total uploaded files must be under 5 MB.");
+      return;
+    }
+
+    var btn = form.querySelector('input[type="submit"]');
+    btn.disabled = true;
+    btn.value = "SUBMITTING...";
+
+    try {
+      var res = await fetch("/api/apply", {
+        method: "POST",
+        body: new FormData(form)
+      });
+      var data = await res.json().catch(function() {
+        return { ok: false, error: "Unexpected server response" };
+      });
+      if (res.ok && data.ok) {
+        form.reset();
+        dobInput.max = getMaxDobStr();
+        showMessage(
+          "sent",
+          "Thank you for your application. Our team will review your details and get back to you shortly.",
+          6000
+        );
+      } else {
+        throw new Error(data.error || "Submission failed");
+      }
+    } catch (err) {
+      showMessage("failed", "Error submitting application: " + err.message);
+    } finally {
+      btn.disabled = false;
+      btn.value = "SUBMIT APPLICATION";
+    }
+  });
+})();
 </script>
 </div>
 </div></section>        </div>
@@ -201,7 +387,8 @@ alt="Logo of Capital Jets" width="384" height="97" loading="lazy">
 <li id="menu-item-30" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-30"><a href="/p-16.html">Safety</a></li>
 <li id="menu-item-29" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-29"><a href="/p-18.html">Sustainability</a></li>
 <li id="menu-item-34" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-privacy-policy menu-item-34"><a rel="privacy-policy" href="/p-3.html">Privacy</a></li>
-<li id="menu-item-28" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-20 current_page_item menu-item-28"><a href="/p-20.html" aria-current="page">Contact Us</a></li>
+<li id="menu-item-28" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-28"><a href="/p-20.html">Contact Us</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item current_page_item"><a href="/apply/" aria-current="page">Apply</a></li>
 </ul></div>                    </nav>
 <div class="contacts"><a href='tel:+13462084440'><img src='/wp-content/themes/capitaljets/img/phone-call-icon.svg' alt='Phone Call Icon' loading='lazy' width='16' height='16'>+1 (346) 208-4440</a><a href="mailto:contact-ops@capitaljets.com">contact-ops@capitaljets.com</a></div>
 </div>
@@ -218,23 +405,6 @@ window.cjFormView = {"endpoint":"https:\/\/capitaljets.com\/wp-json\/cj\/v1\/for
 //# sourceURL=cj-form-view-js-before
 </script>
 <script data-wp-strategy="defer" defer id="cj-form-view-js" src="/wp-content/themes/capitaljets/js/form-view.min.js?ver=1.0.0"></script>
-<script id="wp-hooks-js" src="/wp-includes/js/dist/hooks.min.js?ver=f0f188028580e8dc1255"></script>
-<script id="wp-i18n-js" src="/wp-includes/js/dist/i18n.min.js?ver=1dfe7db3940c23ea9216"></script>
-<script id="wp-i18n-js-after">
-wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
-//# sourceURL=wp-i18n-js-after
-</script>
-<script id="swv-js" src="/wp-content/plugins/contact-form-7/includes/swv/js/index.js?ver=6.2"></script>
-<script id="contact-form-7-js-before">
-var wpcf7 = {
-"api": {
-"root": "https:\/\/capitaljets.com\/wp-json\/",
-"namespace": "contact-form-7\/v1"
-}
-};
-//# sourceURL=contact-form-7-js-before
-</script>
-<script id="contact-form-7-js" src="/wp-content/plugins/contact-form-7/includes/js/index.js?ver=6.2"></script>
 <script async src="https://sourcebuster2.pages.dev/sb2.min.js" data-sb2-auto ></script>
 </body>
 </html><!-- WP Fastest Cache file was created in 0.215 seconds, on November 17, 2026 @ 3:33 pm -->
