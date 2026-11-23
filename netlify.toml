@@ -1,0 +1,18 @@
+[build]
+  publish = "."
+  functions = "netlify/functions"
+
+[[redirects]]
+  from = "/api/apply"
+  to = "/.netlify/functions/apply"
+  status = 200
+
+[[redirects]]
+  from = "/*/wp-content/*"
+  to = "/wp-content/:splat"
+  status = 200
+
+[[redirects]]
+  from = "/*/wp-includes/*"
+  to = "/wp-includes/:splat"
+  status = 200
