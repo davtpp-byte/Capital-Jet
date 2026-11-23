@@ -8,11 +8,21 @@
   status = 200
 
 [[redirects]]
-  from = "/*/wp-content/*"
+  from = "/:section/wp-content/*"
   to = "/wp-content/:splat"
   status = 200
 
 [[redirects]]
-  from = "/*/wp-includes/*"
+  from = "/:section/:sub/wp-content/*"
+  to = "/wp-content/:splat"
+  status = 200
+
+[[redirects]]
+  from = "/:section/wp-includes/*"
+  to = "/wp-includes/:splat"
+  status = 200
+
+[[redirects]]
+  from = "/:section/:sub/wp-includes/*"
   to = "/wp-includes/:splat"
   status = 200
