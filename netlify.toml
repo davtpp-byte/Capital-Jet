@@ -1,4 +1,5 @@
 [build]
+  command = "node scripts/set-site-url.js"
   publish = "."
   functions = "netlify/functions"
 
