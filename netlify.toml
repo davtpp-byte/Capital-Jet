@@ -8,6 +8,11 @@
   status = 200
 
 [[redirects]]
+  from = "/api/contact"
+  to = "/.netlify/functions/contact"
+  status = 200
+
+[[redirects]]
   from = "/:section/wp-content/*"
   to = "/wp-content/:splat"
   status = 200
